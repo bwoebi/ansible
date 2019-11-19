@@ -52,5 +52,5 @@ if _system_selectors:
     selectors = _system_selectors
 else:
     # Our bundled copy
-    from . import _selectors2 as selectors
+    from ansible.module_utils.compat.selectors import _selectors2 as selectors
 sys.modules['ansible.compat.selectors'] = selectors

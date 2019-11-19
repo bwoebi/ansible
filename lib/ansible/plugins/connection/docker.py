@@ -48,8 +48,8 @@ import re
 from distutils.version import LooseVersion
 
 import ansible.constants as C
-from ansible.compat import selectors
 from ansible.errors import AnsibleError, AnsibleFileNotFound
+from ansible.module_utils.compat import selectors
 from ansible.module_utils.six.moves import shlex_quote
 from ansible.module_utils._text import to_bytes, to_native, to_text
 from ansible.plugins.connection import ConnectionBase, BUFSIZE
